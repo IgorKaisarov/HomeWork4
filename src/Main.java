@@ -23,6 +23,21 @@ public class Main {
             System.out.println(" Если возраст человека равнен " + age1 + ", то он совершеннолетний.");
         }
 
+        int temperature = -10;
+        if (temperature < 5) {
+            System.out.println(" На улице холодно, нужно надеть шапку. ");
+        }
+        if (temperature >= 5) {
+            System.out.println(" Сегодня тепло, можно идти без шапки. ");
+        }
+
+        int temperature1 = 30;
+        if (temperature1 < 5) {
+            System.out.println(" На улице холодно, нужно надеть шапку");
+        }
+        if (temperature1 >= 5) {
+            System.out.println(" Сегодня тепло, можно идти без шапки");
+}
 
 
 
