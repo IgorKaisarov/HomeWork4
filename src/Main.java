@@ -33,11 +33,34 @@ public class Main {
 
         int temperature1 = 30;
         if (temperature1 < 5) {
-            System.out.println(" На улице холодно, нужно надеть шапку");
+            System.out.println(" На улице холодно, нужно надеть шапку. ");
         }
         if (temperature1 >= 5) {
-            System.out.println(" Сегодня тепло, можно идти без шапки");
-}
+            System.out.println(" Сегодня тепло, можно идти без шапки. ");
+        }
+
+        int speed = 30;
+        if (speed <= 60) {
+            System.out.println(" Если скорость " + speed + ", можно ездить спокойно. ");
+        }
+        if (speed > 60 ) {
+            System.out.println(" Если скорость " + speed + ", то придется заплатить штраф. ");
+        }
+
+        int speed1 = 90;
+        if (speed1 <= 60) {
+            System.out.println(" Если скорость " + speed1 + ", можно ездить спокойно. ");
+        }
+        if (speed1 > 60 ) {
+            System.out.println(" Если скорость " + speed1 + ", то придется заплатить штраф. ");
+        }
+
+
+
+
+
+
+
 
 
 
