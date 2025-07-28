@@ -98,7 +98,7 @@ public class Main {
         int standingPlaces = seatsInTheCarriage - seatingPlaces;
         System.out.println(standingPlaces);
 
-        int passengers = 99;
+        int passengers = 102;
         System.out.println(passengers);
 
         int seatingPassengers = seatingPlaces - passengers;
@@ -114,7 +114,7 @@ public class Main {
         if (passengers >= 60 && passengers <= 101) {
             System.out.println("Если количество пассажиров в вагоне равно " + passengers + ", то в вагоне нет свободных сидячих мест, но есть свободные стоячие места в количестве " + standingPassengers + " мест. ");
         }
-        if (passengers >= 102) {
+        if (passengers == 102) {
             System.out.println("Если количество пассажиров в вагоне равно " + passengers + ", то вагон заполнен и свободных мест нет. ");
         }
 
