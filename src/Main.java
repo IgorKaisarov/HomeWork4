@@ -91,15 +91,20 @@ public class Main {
 
         int seatsInTheCarriage = 102;
         System.out.println(seatsInTheCarriage);
+
         int seatingPlaces = 60;
         System.out.println(seatingPlaces);
+
         int standingPlaces = seatsInTheCarriage - seatingPlaces;
         System.out.println(standingPlaces);
-        int passengers = 102;
+
+        int passengers = 99;
         System.out.println(passengers);
+
         int seatingPassengers = seatingPlaces - passengers;
         boolean seatingPassengersQuantity = passengers >= 1 && passengers <= 59;
         System.out.println(seatingPassengers);
+
         int standingPassengers = seatsInTheCarriage - passengers;
         boolean standingPassengersQuantity = passengers >= 60 && passengers <= 101;
 
@@ -111,6 +116,26 @@ public class Main {
         }
         if (passengers >= 102) {
             System.out.println("Если количество пассажиров в вагоне равно " + passengers + ", то вагон заполнен и свободных мест нет. ");
+        }
+
+        int one = 10;
+        System.out.println(one);
+
+        int two = 20;
+        System.out.println(two);
+
+        int three = 30;
+        System.out.println(three);
+
+        if (one > two && one > three) {
+            System.out.println("Первое число самое большое");
+
+        } else if (two > one && two > three) {
+            System.out.println("Второе число самое большое");
+
+        } else {
+            System.out.println("Третье число самое большое");
+
         }
 
 
