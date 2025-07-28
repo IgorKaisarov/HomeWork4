@@ -1,3 +1,5 @@
+import java.sql.SQLOutput;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
@@ -43,7 +45,7 @@ public class Main {
         if (speed <= 60) {
             System.out.println(" Если скорость " + speed + ", можно ездить спокойно. ");
         }
-        if (speed > 60 ) {
+        if (speed > 60) {
             System.out.println(" Если скорость " + speed + ", то придется заплатить штраф. ");
         }
 
@@ -51,7 +53,7 @@ public class Main {
         if (speed1 <= 60) {
             System.out.println(" Если скорость " + speed1 + ", можно ездить спокойно. ");
         }
-        if (speed1 > 60 ) {
+        if (speed1 > 60) {
             System.out.println(" Если скорость " + speed1 + ", то придется заплатить штраф. ");
         }
 
@@ -59,33 +61,64 @@ public class Main {
         if (age2 >= 2 && age2 <= 6) {
             System.out.println(" Если возраст человека равен " + age2 + ", то ему нужно ходить в детский сад. ");
         }
-        if (age2 >=7 && age2 <=17) {
+        if (age2 >= 7 && age2 <= 17) {
             System.out.println(" Если возраст человека равен " + age2 + ", то ему нужно ходить в школу. ");
         }
-        if (age2 >=18 && age2 <=24) {
+        if (age2 >= 18 && age2 <= 24) {
             System.out.println(" Если возраст человка равен " + age2 + ", то ему нужно ходить в университет. ");
         }
-        if (age2 >24) {
-            System.out.println(" Если возраст человека равен "  + age2 + ", то ему нужно ходить на работу. ");
+        if (age2 > 24) {
+            System.out.println(" Если возраст человека равен " + age2 + ", то ему нужно ходить на работу. ");
         }
 
         int age3 = 14;
         boolean adult = true;
-         if (age3 < 5) {
-             System.out.println(" Если возраст ребенка равен " + age3 + ", то ему нельзя кататься на аттракционе. ");
-         }
-         if (age3 >= 5 && age3 < 14) {
-             if (adult) {
-             System.out.printf(" Если возраст ребенка равен " + age3 + ", то ему можно кататься на аттракционе в сопровождении возрослого. ");
+        if (age3 < 5) {
+            System.out.println(" Если возраст ребенка равен " + age3 + ", то ему нельзя кататься на аттракционе. ");
+        }
+        if (age3 >= 5 && age3 < 14) {
+            if (adult) {
+                System.out.printf(" Если возраст ребенка равен " + age3 + ", то ему можно кататься на аттракционе в сопровождении возрослого. ");
 
-         } else {
-                 System.out.println(" Если возраст ребенка равен " + age3 + " и если взрослого нет, то кататься нельзя. ");
-             }
+            } else {
+                System.out.println(" Если возраст ребенка равен " + age3 + " и если взрослого нет, то кататься нельзя. ");
+            }
 
-         }
-         if (age3 >= 14) {
-             System.out.println(" Если возраст ребенка равен " + age3 + ", то он может кататься на аттракционе без сопровождения взрослого. ");
-         }
+        }
+        if (age3 >= 14) {
+            System.out.println(" Если возраст ребенка равен " + age3 + ", то он может кататься на аттракционе без сопровождения взрослого. ");
+        }
+
+        int seatsInTheCarriage = 102;
+        System.out.println(seatsInTheCarriage);
+        int seatingPlaces = 60;
+        System.out.println(seatingPlaces);
+        int standingPlaces = seatsInTheCarriage - seatingPlaces;
+        System.out.println(standingPlaces);
+        int passengers = 102;
+        System.out.println(passengers);
+        int seatingPassengers = seatingPlaces - passengers;
+        boolean seatingPassengersQuantity = passengers >= 1 && passengers <= 59;
+        System.out.println(seatingPassengers);
+        int standingPassengers = seatsInTheCarriage - passengers;
+        boolean standingPassengersQuantity = passengers >= 60 && passengers <= 101;
+
+        if (passengers >= 1 && passengers <= 59) {
+            System.out.println("Если количество пассажиров в вагоне равно " + passengers + ", то в вагоне есть свобдные сидячие места в количестве " + seatingPassengers + " мест. ");
+        }
+        if (passengers >= 60 && passengers <= 101) {
+            System.out.println("Если количество пассажиров в вагоне равно " + passengers + ", то в вагоне нет свободных сидячих мест, но есть свободные стоячие места в количестве " + standingPassengers + " мест. ");
+        }
+        if (passengers >= 102) {
+            System.out.println("Если количество пассажиров в вагоне равно " + passengers + ", то вагон заполнен и свободных мест нет. ");
+        }
+
+
+
+
+
+
+
 
 
 
