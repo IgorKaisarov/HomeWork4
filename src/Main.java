@@ -64,7 +64,7 @@ public class Main {
         int age3 = 12;
         boolean adult = true;
         if (age3 < 5) {
-            System.out.println(" Если ребенку " + age3 + ", то ему нельзя кататься на аттракционе. ");
+            System.out.println(" Если ребенку " + age3 + ", то нельзя кататься на аттракционе. ");
         }
         if (age3 >= 5 && age3 < 14) {
             if (adult) {
