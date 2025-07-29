@@ -8,66 +8,56 @@ public class Main {
         // to see how IntelliJ IDEA suggests fixing it.
         System.out.printf("Home Work 4");
 
-        int age = 25;
+        int age = 17;
         if (age >= 18) {
             System.out.println(" Если возраст человека равнен " + age + ", то он совершеннолетний.");
-        }
-        if (age < 18) {
-            System.out.println("Если возраст человека равен " + age + ", то он не достиг совершеннолетия, нужно немного подождать");
+        } else {
+            System.out.println(" Если возраст человека равен " + age + ", то он не достиг совершеннолетия, нужно немного подождать");
         }
 
-        int age1 = 17;
+        int age1 = 25;
         if (age1 < 18) {
             System.out.println("Если возраст человека равен " + age1 + ", то он не достиг совершеннолетия, нужно немного подождать");
-        }
-
-        if (age1 >= 18) {
+        } else {
             System.out.println(" Если возраст человека равнен " + age1 + ", то он совершеннолетний.");
         }
 
-        int temperature = -10;
+        int temperature = 7;
         if (temperature < 5) {
             System.out.println(" На улице холодно, нужно надеть шапку. ");
-        }
-        if (temperature >= 5) {
+        } else {
             System.out.println(" Сегодня тепло, можно идти без шапки. ");
         }
 
-        int temperature1 = 30;
-        if (temperature1 < 5) {
+        int temperature1 = -30;
+        if (temperature1 > 5) {
+            System.out.println(" Сегодня тепло, можно идти без шапки. ");
+        } else {
             System.out.println(" На улице холодно, нужно надеть шапку. ");
         }
-        if (temperature1 >= 5) {
-            System.out.println(" Сегодня тепло, можно идти без шапки. ");
-        }
 
-        int speed = 30;
+        int speed = 70;
         if (speed <= 60) {
             System.out.println(" Если скорость " + speed + ", можно ездить спокойно. ");
-        }
-        if (speed > 60) {
+        } else {
             System.out.println(" Если скорость " + speed + ", то придется заплатить штраф. ");
         }
 
-        int speed1 = 90;
+        int speed1 = 50;
         if (speed1 <= 60) {
             System.out.println(" Если скорость " + speed1 + ", можно ездить спокойно. ");
-        }
-        if (speed1 > 60) {
+        } else {
             System.out.println(" Если скорость " + speed1 + ", то придется заплатить штраф. ");
         }
 
-        int age2 = 35;
+        int age2 = 15;
         if (age2 >= 2 && age2 <= 6) {
             System.out.println(" Если возраст человека равен " + age2 + ", то ему нужно ходить в детский сад. ");
-        }
-        if (age2 >= 7 && age2 <= 17) {
+        } else if (age2 >= 7 && age2 <= 17) {
             System.out.println(" Если возраст человека равен " + age2 + ", то ему нужно ходить в школу. ");
-        }
-        if (age2 >= 18 && age2 <= 24) {
+        } else if (age2 >= 18 && age2 <= 24) {
             System.out.println(" Если возраст человка равен " + age2 + ", то ему нужно ходить в университет. ");
-        }
-        if (age2 > 24) {
+        } else {
             System.out.println(" Если возраст человека равен " + age2 + ", то ему нужно ходить на работу. ");
         }
 
@@ -90,24 +80,30 @@ public class Main {
         }
 
         int seatsInTheCarriage = 102;
-        System.out.println(seatsInTheCarriage);
-
+        {
+            System.out.println(seatsInTheCarriage);
+        }
         int seatingPlaces = 60;
-        System.out.println(seatingPlaces);
-
+        {
+            System.out.println(seatingPlaces);
+        }
         int standingPlaces = seatsInTheCarriage - seatingPlaces;
-        System.out.println(standingPlaces);
-
-        int passengers = 102;
-        System.out.println(passengers);
-
+        {
+            System.out.println(standingPlaces);
+        }
+        int passengers = 100;
+        {
+            System.out.println(passengers);
+        }
         int seatingPassengers = seatingPlaces - passengers;
-        boolean seatingPassengersQuantity = passengers >= 1 && passengers <= 59;
-        System.out.println(seatingPassengers);
-
+        {
+            boolean seatingPassengersQuantity = passengers >= 1 && passengers <= 59;
+            System.out.println(seatingPassengers);
+        }
         int standingPassengers = seatsInTheCarriage - passengers;
-        boolean standingPassengersQuantity = passengers >= 60 && passengers <= 101;
-
+        {
+            boolean standingPassengersQuantity = passengers >= 60 && passengers <= 101;
+        }
         if (passengers >= 1 && passengers <= 59) {
             System.out.println("Если количество пассажиров в вагоне равно " + passengers + ", то в вагоне есть свобдные сидячие места в количестве " + seatingPassengers + " мест. ");
         }
@@ -119,14 +115,17 @@ public class Main {
         }
 
         int one = 10;
-        System.out.println(one);
-
+        {
+            System.out.println(one);
+        }
         int two = 20;
-        System.out.println(two);
-
+        {
+            System.out.println(two);
+        }
         int three = 30;
-        System.out.println(three);
-
+        {
+            System.out.println(three);
+        }
         if (one > two && one > three) {
             System.out.println("Первое число самое большое");
 
@@ -137,22 +136,6 @@ public class Main {
             System.out.println("Третье число самое большое");
 
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
         for (int i = 1; i <= 5; i++) {
