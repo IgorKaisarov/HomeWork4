@@ -1,11 +1,6 @@
-import java.sql.SQLOutput;
-
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
+
         System.out.printf("Home Work 4");
 
         int age = 17;
@@ -81,50 +76,50 @@ public class Main {
 
         int seatsInTheCarriage = 102;
 
-            System.out.println(seatsInTheCarriage);
+        System.out.println(seatsInTheCarriage);
 
         int seatingPlaces = 60;
 
-            System.out.println(seatingPlaces);
+        System.out.println(seatingPlaces);
 
         int standingPlaces = seatsInTheCarriage - seatingPlaces;
 
-            System.out.println(standingPlaces);
+        System.out.println(standingPlaces);
 
         int passengers = 45;
 
-            System.out.println(passengers);
+        System.out.println(passengers);
 
         int seatingPassengers = seatingPlaces - passengers;
-        {
-            boolean seatingPassengersQuantity = passengers >= 1 && passengers <= 59;
-            System.out.println(seatingPassengers);
-        }
+
+        boolean seatingPassengersQuantity = passengers >= 1 && passengers <= 59;
+        System.out.println(seatingPassengers);
+
         int standingPassengers = seatsInTheCarriage - passengers;
 
-            boolean standingPassengersQuantity = passengers >= 60 && passengers <= 101;
+        boolean standingPassengersQuantity = passengers >= 60 && passengers <= 101;
 
-        if (passengers >= 1 && passengers <= 59)
+        if (passengers >= 1 && passengers <= 59) {
             System.out.println("Если пассажиров в вагоне " + passengers + ", то есть свобдных сидячих " + seatingPassengers + " мест. ");
-
-        if (passengers >= 60 && passengers <= 101)
+        }
+        if (passengers >= 60 && passengers <= 101) {
             System.out.println("Если пассажиров в вагоне " + passengers + ", то нет свободных сидячих мест, но есть свободных сидячих " + standingPassengers + " мест(а). ");
-
-        if (passengers == 102)
+        }
+        if (passengers == 102) {
             System.out.println("Если пассажиров в вагоне " + passengers + ", то вагон заполнен, мест нет. ");
-
+        }
 
         int one = 10;
 
-            System.out.println(one);
+        System.out.println(one);
 
         int two = 20;
 
-            System.out.println(two);
+        System.out.println(two);
 
         int three = 30;
 
-            System.out.println(three);
+        System.out.println(three);
 
         if (one > two && one > three) {
             System.out.println("Первое число самое большое");
